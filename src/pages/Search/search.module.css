@@ -13,7 +13,10 @@
   align-items: center;
   padding: 10px 140px;
 }
-
+.filter {
+  display: inline-flex;
+  justify-content: flex-end;
+}
 .error {
   color: #727a85;
   text-align: center;
@@ -24,11 +27,12 @@
   .nav {
     display: block;
     margin: auto;
-    padding: 0px;
+    padding: 5px;
   }
-
+  
   .filter {
     display: flex;
-    justify-content: center;
+    width: 100%;
+    justify-content: flex-end;
   }
 }
