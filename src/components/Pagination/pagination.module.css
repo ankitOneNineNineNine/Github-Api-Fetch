@@ -1,0 +1,18 @@
+.paginate-container {
+  display: flex;
+  padding: 0 150px;
+  margin: 10px 0;
+  margin-bottom: 20px;
+}
+.pages {
+  background: #161b22;
+  display: inline-flex;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.paginateDots {
+  margin-top: 20px;
+  margin-right: 10px;
+}

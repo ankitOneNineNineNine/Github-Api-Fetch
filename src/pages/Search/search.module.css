@@ -1,0 +1,21 @@
+.header{
+    text-align: center;
+    padding: 20px;
+    color: beige;
+}
+
+.nav{
+    width: 100%;
+
+    background-color: #161B22 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 140px;
+}
+
+.error{
+    color:#727a85;
+    text-align: center;
+    margin: 40px auto;
+}
