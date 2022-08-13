@@ -16,3 +16,14 @@
   margin-top: 20px;
   margin-right: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .paginate-container {
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pages {
+    margin: 2px;
+  }
+}

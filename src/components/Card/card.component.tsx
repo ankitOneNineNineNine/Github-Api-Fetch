@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { showFixedNumber } from "../../utils/showFixedNumber";
 import { Tooltip } from "../Tooltip/tooltip.component";
 import styles from "./card.module.css";
 
@@ -19,9 +20,21 @@ export const Card: React.FC<ICardProps> = (props) => {
           <p className={styles.name}>{name}</p>
         </NavLink>
         <div className={styles["info-container"]}>
-          <Tooltip text={stars} icon="fa fa-star" tip="Total Stars" />
-          <Tooltip text={watchers} icon="fa fa-eye" tip="Total Watchers" />
-          <Tooltip text={forks} icon="fa fa-code-fork" tip="Total Forks" />
+          <Tooltip
+            text={showFixedNumber(stars)}
+            icon="fa fa-star"
+            tip="Total Stars"
+          />
+          <Tooltip
+            text={showFixedNumber(watchers)}
+            icon="fa fa-eye"
+            tip="Total Watchers"
+          />
+          <Tooltip
+            text={showFixedNumber(forks)}
+            icon="fa fa-code-fork"
+            tip="Total Forks"
+          />
         </div>
       </div>
       <div>

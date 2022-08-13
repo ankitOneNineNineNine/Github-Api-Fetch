@@ -6,6 +6,7 @@
 .name {
   color: #58a6ff;
   cursor: pointer;
+  word-break: break-all;
   font-size: 20px;
 }
 
@@ -28,6 +29,7 @@
 .description {
   color: #bdc2cd;
   padding: 20px;
+  word-break: break-all;
 }
 
 .date {
@@ -37,4 +39,13 @@
   font-size: 14px;
   align-items: center;
   border-top: 1px solid rgba(110, 110, 110, 0.192);
+}
+
+@media only screen and (max-width: 600px) {
+  .container-top {
+    display: block;
+  }
+  .container-top div {
+    margin: 2px;
+  }
 }

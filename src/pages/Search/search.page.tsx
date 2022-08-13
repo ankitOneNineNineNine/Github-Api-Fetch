@@ -113,16 +113,18 @@ export const SearchPage = () => {
       <h2 className={styles.header}>Search Github Repositories</h2>
       <div className={styles.nav}>
         <Search searchQuery={searchQuery} setSearchQuery={debouncedSearch} />
-        <Dropdown
-          options={sortBy}
-          currentValue={`${sort.sort}-${sort.order}`}
-          changeValue={onChangeSort}
-        />
-        <Dropdown
-          options={paginateOptions}
-          currentValue={per_page.toString()}
-          changeValue={onChangePerPage}
-        />
+        <div className={styles.filter}>
+          <Dropdown
+            options={sortBy}
+            currentValue={`${sort.sort}-${sort.order}`}
+            changeValue={onChangeSort}
+          />
+          <Dropdown
+            options={paginateOptions}
+            currentValue={per_page.toString()}
+            changeValue={onChangePerPage}
+          />
+        </div>
       </div>
       {!isLoading &&
         (repos?.items?.length ? (
