@@ -70,7 +70,7 @@ export const DetailsPage = () => {
             <Tooltip tip="Public" icon="fa fa-unlock" text="" />
           )}
         </div>
-        <div>
+        <div className={styles["description-container"]}>
           <h3>Description</h3>
           <p>{repoDetails?.description || "No Descriptions"}</p>
         </div>
